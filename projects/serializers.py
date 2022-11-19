@@ -9,4 +9,4 @@ class ProjectSerializer(serializers.ModelSerializer):
         # Colocamos los campos que puedan ser consultados, es decir, que serán serializados.
         fields = ('id', 'title', 'description', 'technology', 'created_at')
         # Definimos que campos son solo de lectura, es decir que no podrán ser modificados.
-        read_only_fields = ('created_at') 
+        read_only_fields = ('created_at',) 
